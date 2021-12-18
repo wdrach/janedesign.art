@@ -1,26 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Jane Design logo" src="./assets/logo.jpeg">
+  <div class="center">
+    <Button msg="GET STARTED"/>
+    <Instagram />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Button from './components/Button.vue'
+import Instagram from './components/Instagram.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Button,
+    Instagram
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Karla', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.center {
+  margin: auto;
 }
 </style>
